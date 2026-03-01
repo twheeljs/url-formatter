@@ -43,5 +43,9 @@ const items = computed<NavigationMenuItem[]>(() => [
           icon="i-simple-icons-github" aria-label="GitHub" />
       </UTooltip>
     </template>
+
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+    </template>
   </UHeader>
 </template>
