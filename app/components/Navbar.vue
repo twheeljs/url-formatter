@@ -14,11 +14,11 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: '/getting-started',
     active: route.path === '/getting-started'
   },
-  {
-    label: 'VS Code Extension',
-    to: 'https://marketplace.visualstudio.com/items?itemName=nuxt.url-formatter',
-    target: '_blank'
-  },
+  // {
+  //   label: 'VS Code Extension',
+  //   to: 'https://marketplace.visualstudio.com/items?itemName=nuxt.url-formatter',
+  //   target: '_blank'
+  // },
   {
     label: 'Releases',
     to: 'https://github.com/twheeljs/url-formatter/releases',
