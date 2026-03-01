@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nuxt-style geometric link/URL icon -->
+  <path d="M18 8C21.3137 8 24 10.6863 24 14C24 17.3137 21.3137 20 18 20H16" stroke="#00DC82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 24C10.6863 24 8 21.3137 8 18C8 14.6863 10.6863 12 14 12H16" stroke="#00DC82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
