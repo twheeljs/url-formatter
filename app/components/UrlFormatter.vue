@@ -33,6 +33,11 @@ const columns = [
   { accessorKey: 'key', label: 'Key',  },
   { accessorKey: 'value', label: 'Value' }
 ]
+
+const setExample = () => {
+  urlValue.value = 'https://example.com/search?q=vue&sort=desc&filter=recent#top'
+}
+
 </script>
 
 <template>
@@ -158,9 +163,21 @@ const columns = [
     />
     
     <!-- Empty State -->
-    <div v-else class="text-center py-4 text-gray-400">
-      <UIcon name="i-lucide-arrow-up" class="w-8 h-8 mb-2 mx-auto opacity-50" />
-      <p>Enter a URL above to see the formatted details</p>
+    <div v-else class="flex flex-col items-center justify-center py-8 px-4 text-center shadow-sm dark:shadow-gray-800 rounded-xl">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Ready to Analyze</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 max-w-xs mb-6 leading-relaxed">
+        Paste a URL above to break it down, or start with a complex example to see how it works.
+      </p>
+      <UButton 
+        icon="i-lucide-sparkles" 
+        color="neutral" 
+        variant="subtle" 
+        size="md"
+        @click="setExample"
+        class="transition-all hover:scale-105 active:scale-95"
+      >
+        Try an Example
+      </UButton>
     </div>
   </div>
 </template>
